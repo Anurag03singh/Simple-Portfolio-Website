@@ -1,0 +1,255 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(29, 39, 54);
+    color: #ffffff;
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: rgb(29, 39, 54);
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.header .logo h1 {
+    margin: 0;
+    font-size: 1.8em;
+    color: #ffffff;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.nav-link:hover {
+    color: #00a8ff;
+}
+
+/* Home Section */
+.section-home {
+    background-color: #1c2b3a;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.home-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile-container {
+    text-align: center;
+}
+
+.profile-photo {
+    border: 5px solid #00a8ff;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.btn-primary {
+    background-color: #00a8ff;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.btn-primary:hover {
+    background-color: #007bb5;
+}
+
+/* About Section */
+.section-about {
+    background-color: #1c2b3a;
+    padding: 50px 0;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.about-image img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.about-text {
+    max-width: 800px;
+    text-align: left;
+}
+
+/* Skills Section */
+.section-skills {
+    background-color: #1c2b3a;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.skill-item {
+    background-color: #2d3e50;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 200px;
+    text-align: center;
+}
+
+/* Education Section */
+.section-education {
+    background-color: #1c2b3a;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.education-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.education-item {
+    background-color: #2d3e50;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: left;
+    animation: slideUp 1.2s ease-in-out;
+}
+
+.education-item h3 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: #00a8ff;
+}
+
+.education-item p {
+    margin: 10px 0;
+}
+
+/* Projects Section */
+.section-projects {
+    background-color: #1c2b3a;
+    padding: 50px 0;
+}
+
+.projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.project-card {
+    background-color: #2d3e50;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    width: 100%;
+}
+
+/* Contact Section */
+.section-contact {
+    background-color: #1c2b3a;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.contact-info a {
+    color: #00a8ff;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+    background-color: #1c2b3a;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes zoomIn {
+    from { transform: scale(0.9); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+.animate-fade-in {
+    animation: fadeIn 1s ease-in-out;
+}
+
+.animate-slide-in {
+    animation: slideIn 1s ease-in-out;
+}
+
+.animate-slide-up {
+    animation: slideUp 1.2s ease-in-out;
+}
+
+.animate-zoom-in {
+    animation: zoomIn 1s ease-in-out;
+}
